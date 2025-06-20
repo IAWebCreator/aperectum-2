@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApeRectum - The Ultimate Cosmic Anus Experience</title>
+    <meta name="description" content="Enter the ApeRectum universe - where crude anatomical humor meets cosmic grandeur. The most irreverent meme coin in the galaxy!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS Custom Properties - Cosmic Theme */
+        :root {
+            --primary-orange: #FF5722;
+            --cosmic-black: #000000;
+            --deep-space: #0A0A2A;
+            --purple-nebula: #4A148C;
+            --neon-green: #33FF00;
+            --font-heading: 'Orbitron', monospace, sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --shadow-glow: 0 0 20px rgba(255, 87, 34, 0.3);
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --border-radius: 12px;
+        }
+
+        /* Global Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: linear-gradient(135deg, var(--cosmic-black) 0%, var(--deep-space) 50%, var(--purple-nebula) 100%);
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        /* Animated Cosmic Background */
+        .cosmic-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: #ffffff;
+            border-radius: 50%;
+            animation: twinkle 3s infinite ease-in-out;
+        }
+
+        .nebula-cloud {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 87, 34, 0.1) 0%, transparent 70%);
+            animation: float 15s infinite ease-in-out;
+        }
+
+        .gas-cloud {
+            position: absolute;
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            background: radial-gradient(ellipse, rgba(255, 87, 34, 0.08) 0%, transparent 70%);
+            animation: drift 20s infinite linear;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            25% { transform: translateY(-20px) rotate(90deg); }
+            50% { transform: translateY(-10px) rotate(180deg); }
+            75% { transform: translateY(-30px) rotate(270deg); }
+        }
+
+        @keyframes drift {
+            0% { transform: translateX(-100px) rotate(0deg); }
+            100% { transform: translateX(calc(100vw + 100px)) rotate(360deg); }
+        }
+
+        /* Typography */
+        .cosmic-heading {
+            font-family: var(--font-heading);
+            font-weight: 900;
+            color: var(--primary-orange);
+            text-shadow: 0 0 30px rgba(255, 87, 34, 0.7);
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            animation: glow-pulse 2s infinite alternate;
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--primary-orange), transparent);
+            animation: expand-line 1s ease-out;
+        }
+
+        @keyframes glow-pulse {
+            0% { text-shadow: 0 0 30px rgba(255, 87, 34, 0.7); }
+            100% { text-shadow: 0 0 50px rgba(255, 87, 34, 1), 0 0 70px rgba(255, 87, 34, 0.5); }
+        }
+
+        @keyframes expand-line {
+            0% { width: 0; }
+            100% { width: 100px; }
+        }
+
+        /* Container and Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section {
+            padding: 5rem 0;
+            position: relative;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            margin-bottom: 1.5rem;
+            animation: slide-up 1s ease-out;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: #cccccc;
+            margin-bottom: 2rem;
+            animation: slide-up 1s ease-out 0.3s both;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, var(--primary-orange), #ff7043);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition-smooth);
+            box-shadow: var(--shadow-glow);
+            animation: slide-up 1s ease-out 0.6s both;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 40px rgba(255, 87, 34, 0.4);
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .floating-bear {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: var(--cosmic-black);
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            animation: float-bear 6s infinite ease-in-out;
+            opacity: 0.3;
+        }
+
+        @keyframes slide-up {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes float-bear {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(180deg); }
+        }
+
+        /* Content Cards */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .cosmic-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 87, 34, 0.2);
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cosmic-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-orange), var(--neon-green), var(--primary-orange));
+            transform: translateX(-100%);
+            animation: scan-line 3s infinite;
+        }
+
+        .cosmic-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(255, 87, 34, 0.2);
+            border-color: var(--primary-orange);
+        }
+
+        .cosmic-card h3 {
+            font-family: var(--font-heading);
+            color: var(--primary-orange);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        @keyframes scan-line {
+            0% { transform: translateX(-100%); }
+            50% { transform: translateX(100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        /* Token Info */
+        .token-info {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            margin: 3rem 0;
+            border: 2px solid var(--primary-orange);
+            position: relative;
+        }
+
+        .token-address {
+            font-family: 'Courier New', monospace;
+            background: rgba(255, 87, 34, 0.1);
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            border: 1px solid var(--primary-orange);
+            margin: 1rem 0;
+            word-break: break-all;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .token-address:hover {
+            background: rgba(255, 87, 34, 0.2);
+            transform: scale(1.02);
+        }
+
+        /* Steps/Roadmap */
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .step-card {
+            background: linear-gradient(135deg, rgba(255, 87, 34, 0.1), rgba(74, 20, 140, 0.1));
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid rgba(255, 87, 34, 0.3);
+            position: relative;
+            transform: translateY(50px);
+            opacity: 0;
+            animation: reveal-step 0.6s forwards;
+        }
+
+        .step-card:nth-child(1) { animation-delay: 0.1s; }
+        .step-card:nth-child(2) { animation-delay: 0.2s; }
+        .step-card:nth-child(3) { animation-delay: 0.3s; }
+        .step-card:nth-child(4) { animation-delay: 0.4s; }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-orange);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin: 0 auto 1rem;
+            animation: pulse-number 2s infinite;
+        }
+
+        .step-card h3 {
+            font-family: var(--font-heading);
+            margin-bottom: 1rem;
+            color: var(--primary-orange);
+        }
+
+        @keyframes reveal-step {
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes pulse-number {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        /* Social Links */
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .social-link {
+            display: block;
+            padding: 1.5rem 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--border-radius);
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            border: 1px solid rgba(255, 87, 34, 0.3);
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-link::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: radial-gradient(circle, rgba(255, 87, 34, 0.2) 0%, transparent 70%);
+            transition: all 0.3s ease;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .social-link:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .social-link:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-orange);
+            box-shadow: 0 10px 30px rgba(255, 87, 34, 0.3);
+        }
+
+        .social-link span {
+            position: relative;
+            z-index: 1;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Footer */
+        .footer {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 3rem 0 1rem;
+            text-align: center;
+            border-top: 1px solid rgba(255, 87, 34, 0.3);
+        }
+
+        .footer-content {
+            margin-bottom: 2rem;
+        }
+
+        .copyright {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .section {
+                padding: 3rem 0;
+            }
+            
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .steps-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .social-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .social-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Focus styles for keyboard navigation */
+        .cta-button:focus,
+        .social-link:focus,
+        .token-address:focus {
+            outline: 2px solid var(--primary-orange);
+            outline-offset: 2px;
+        }
+
+        /* Gas particle effects */
+        .fart-particle {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: rgba(255, 87, 34, 0.6);
+            border-radius: 50%;
+            pointer-events: none;
+            animation: float-away 2s ease-out forwards;
+        }
+
+        @keyframes float-away {
+            0% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-100px) scale(0);
+            }
+        }
+
+        /* Special hover effects for cosmic theme */
+        .cosmic-hover:hover {
+            animation: cosmic-wiggle 0.5s ease-in-out;
+        }
+
+        @keyframes cosmic-wiggle {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(1deg); }
+            75% { transform: rotate(-1deg); }
+        }
+
+        /* Scroll reveal animation */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.6s ease-out;
+        }
+
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Cosmic Background -->
+    <div class="cosmic-background" id="cosmicBg"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="cosmic-heading">Welcome to ApeRectum</h1>
+                <p class="hero-subtitle">Your portal to the most irreverent cosmic-crude cryptocurrency in the galaxy!</p>
+                <a href="#about" class="cta-button" id="exploreBtn">Explore the Cosmic Anus</a>
+            </div>
+            <div class="floating-bear" style="top: 20%; right: 10%;"></div>
+            <div class="floating-bear" style="bottom: 30%; left: 15%;"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title cosmic-heading scroll-reveal">What is ApeRectum?</h2>
+            <div class="content-grid">
+                <div class="cosmic-card scroll-reveal cosmic-hover">
+                    <h3>Cosmic Crude Humor</h3>
+                    <p>ApeRectum combines the vastness of space with the universality of anatomical humor. We're not just another meme coin - we're a cosmic phenomenon that boldly goes where no rectum has gone before!</p>
+                </div>
+                <div class="cosmic-card scroll-reveal cosmic-hover">
+                    <h3>Astronomical Anus</h3>
+                    <p>From Uranus jokes to black hole puns, ApeRectum represents the perfect fusion of juvenile humor and celestial wonder. Think of us as the Hubble Telescope of butthole jokes!</p>
+                </div>
+                <div class="cosmic-card scroll-reveal cosmic-hover">
+                    <h3>Galactic Gas</h3>
+                    <p>Our community is powered by the collective gas of thousands of space apes, creating a nebula of laughter that spans across the cryptocurrency universe. Join the cosmic fart cloud!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Token Info Section -->
+    <section id="tokenomics" class="section">
+        <div class="container">
+            <h2 class="section-title cosmic-heading scroll-reveal">Token Rectum-nomics</h2>
+            <div class="token-info scroll-reveal">
+                <h3 style="color: var(--primary-orange); margin-bottom: 1rem;">ApeRectum Token Details</h3>
+                <p><strong>Token Name:</strong> ApeRectum</p>
+                <p><strong>Symbol:</strong> AR</p>
+                <p><strong>Blockchain:</strong> Solana</p>
+                <div class="token-address" id="tokenAddress" onclick="copyToClipboard(this)" title="Click to copy">
+                    <strong>Contract Address:</strong><br>
+                    CHiNsA2B6ZbmKnEmHPCbbX9aXJyoJzAtcLpHEDd6Qyq3
+                </div>
+                <p style="font-style: italic; color: #cccccc;">Click the address above to copy it to your cosmic clipboard!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Buy Section -->
+    <section id="buy" class="section">
+        <div class="container">
+            <h2 class="section-title cosmic-heading scroll-reveal">Join the ApeRectum Cosmic Journey</h2>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Get a Wallet</h3>
+                    <p>Download a Solana-compatible wallet like Phantom or Solflare. Your gateway to the cosmic rectum awaits!</p>
+                </div>
+                <div class="step-card">
+                    <h3>Acquire SOL</h3>
+                    <div class="step-number">2</div>
+                    <p>Purchase Solana (SOL) from any major cryptocurrency exchange. Fuel for your interstellar journey!</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Connect to Jupiter</h3>
+                    <p>Connect your wallet to Jupiter or another Solana DEX. The cosmic trading post for all your anus-related needs!</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Swap SOL for AR</h3>
+                    <p>Use the DEX to exchange your SOL for ApeRectum tokens. Welcome to the cosmic butthole club!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="section">
+        <div class="container">
+            <h2 class="section-title cosmic-heading scroll-reveal">Connect with the Cosmic Anus Community</h2>
+            <div class="social-grid scroll-reveal">
+                <a href="#" class="social-link" onclick="createFartEffect(event)">
+                    <span>🐦 Twitter/X</span>
+                </a>
+                <a href="#" class="social-link" onclick="createFartEffect(event)">
+                    <span>📱 Telegram</span>
+                </a>
+                <a href="#" class="social-link" onclick="createFartEffect(event)">
+                    <span>📺 YouTube</span>
+                </a>
+                <a href="#" class="social-link" onclick="createFartEffect(event)">
+                    <span>🎵 TikTok</span>
+                </a>
+                <a href="#" class="social-link" onclick="createFartEffect(event)">
+                    <span>📊 Dextools</span>
+                </a>
+                <a href="#" class="social-link" onclick="createFartEffect(event)">
+                    <span>📈 Dexscreener</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content scroll-reveal">
+                <p style="font-size: 1.2rem; color: var(--primary-orange); margin-bottom: 1rem;">
+                    "In space, no one can hear you fart... but they can smell your success!"
+                </p>
+                <div class="token-address" style="margin: 2rem auto; max-width: 600px;">
+                    <strong>ApeRectum Contract:</strong><br>
+                    CHiNsA2B6ZbmKnEmHPCbbX9aXJyoJzAtcLpHEDd6Qyq3
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 ApeRectum. All cosmic rights reserved. | Powered by cosmic gas and stellar humor.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.8rem; opacity: 0.6;">
+                    Disclaimer: ApeRectum is a meme token created for entertainment purposes. Please do your own research before investing in any cryptocurrency.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Cosmic Background Animation System
+        class CosmicBackground {
+            constructor() {
+                this.container = document.getElementById('cosmicBg');
+                this.stars = [];
+                this.nebulae = [];
+                this.gasClouds = [];
+                this.init();
+            }
+
+            init() {
+                this.createStars();
+                this.createNebulae();
+                this.createGasClouds();
+                this.animateElements();
+            }
+
+            createStars() {
+                for (let i = 0; i < 150; i++) {
+                    const star = document.createElement('div');
+                    star.className = 'star';
+                    star.style.left = Math.random() * 100 + '%';
+                    star.style.top = Math.random() * 100 + '%';
+                    star.style.animationDelay = Math.random() * 3 + 's';
+                    
+                    // Random star sizes
+                    const size = Math.random() * 3 + 1;
+                    star.style.width = size + 'px';
+                    star.style.height = size + 'px';
+                    
+                    // Occasional green stars
+                    if (Math.random() < 0.1) {
+                        star.style.background = '#33FF00';
+                        star.style.boxShadow = '0 0 10px #33FF00';
+                    }
+                    
+                    this.container.appendChild(star);
+                    this.stars.push(star);
+                }
+            }
+
+            createNebulae() {
+                for (let i = 0; i < 8; i++) {
+                    const nebula = document.createElement('div');
+                    nebula.className = 'nebula-cloud';
+                    nebula.style.left = Math.random() * 100 + '%';
+                    nebula.style.top = Math.random() * 100 + '%';
+                    nebula.style.width = (Math.random() * 200 + 100) + 'px';
+                    nebula.style.height = (Math.random() * 200 + 100) + 'px';
+                    nebula.style.animationDelay = Math.random() * 15 + 's';
+                    
+                    this.container.appendChild(nebula);
+                    this.nebulae.push(nebula);
+                }
+            }
+
+            createGasClouds() {
+                for (let i = 0; i < 5; i++) {
+                    const gasCloud = document.createElement('div');
+                    gasCloud.className = 'gas-cloud';
+                    gasCloud.style.top = Math.random() * 100 + '%';
+                    gasCloud.style.left = '-100px';
+                    gasCloud.style.width = (Math.random() * 150 + 80) + 'px';
+                    gasCloud.style.height = (Math.random() * 100 + 60) + 'px';
+                    gasCloud.style.animationDelay = Math.random() * 20 + 's';
+                    
+                    this.container.appendChild(gasCloud);
+                    this.gasClouds.push(gasCloud);
+                }
+            }
+
+            animateElements() {
+                // Add periodic gravitational wave effect
+                setInterval(() => {
+                    this.createGravitationalWave();
+                }, 8000);
+            }
+
+            createGravitationalWave() {
+                const wave = document.createElement('div');
+                wave.style.position = 'absolute';
+                wave.style.top = '0';
+                wave.style.left = '0';
+                wave.style.width = '100%';
+                wave.style.height = '100%';
+                wave.style.background = 'radial-gradient(circle, transparent 0%, rgba(255, 87, 34, 0.03) 50%, transparent 100%)';
+                wave.style.borderRadius = '50%';
+                wave.style.transform = 'scale(0)';
+                wave.style.animation = 'gravitational-wave 3s ease-out forwards';
+                wave.style.pointerEvents = 'none';
+                
+                this.container.appendChild(wave);
+                
+                setTimeout(() => {
+                    wave.remove();
+                }, 3000);
+            }
+        }
+
+        // Fart Particle Effect System
+        function createFartEffect(event) {
+            event.preventDefault();
+            const rect = event.currentTarget.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+            
+            for (let i = 0; i < 12; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'fart-particle';
+                particle.style.left = centerX + (Math.random() - 0.5) * 40 + 'px';
+                particle.style.top = centerY + (Math.random() - 0.5) * 40 + 'px';
+                particle.style.animationDelay = (Math.random() * 0.5) + 's';
+                
+                document.body.appendChild(particle);
+                
+                setTimeout(() => {
+                
